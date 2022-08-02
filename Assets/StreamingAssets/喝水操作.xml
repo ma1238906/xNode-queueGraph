@@ -1,0 +1,24 @@
+<Root Name="喝水操作" TotalTime="200" TotalScores="100">
+  <User id="1">
+    <MainInfo MainObject="水杯" TipStr="拿起水杯。" OperationType="Translate" EndAudio="" CurrentScore="20" />
+    <Anims>
+      <Anim obj="a" anim="move" />
+      <Anim obj="a" anim="translate" />
+    </Anims>
+  </User>
+  <User id="2">
+    <MainInfo MainObject="人物" TipStr="走向饮水机。" OperationType="Translate" EndAudio="" CurrentScore="20" />
+  </User>
+  <User id="3">
+    <MainInfo MainObject="饮水机" TipStr="打开饮水机接水。" OperationType="Rotate" EndAudio="" CurrentScore="20" />
+    <Anims>
+      <Anim obj="饮水机" anim="open" />
+    </Anims>
+  </User>
+  <User id="4">
+    <MainInfo MainObject="人物" TipStr="喝水。" OperationType="Animation" EndAudio="" CurrentScore="40" />
+    <Anims>
+      <Anim obj="人物" anim="drink" />
+    </Anims>
+  </User>
+</Root>
