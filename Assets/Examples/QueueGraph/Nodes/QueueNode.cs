@@ -14,8 +14,8 @@ public enum OperationType
 
 public class QueueNode : MyNodeBase
 {
-	[Input]public EmptyPort startNode;
-	[Output]public EmptyPort nextNode;
+	[Input(ShowBackingValue.Unconnected,ConnectionType.Override,TypeConstraint.None,false)]public EmptyPort startNode;
+	[Output(connectionType = ConnectionType.Override)] public EmptyPort nextNode;
 	public string mainGameobject;
 	[Multiline]
 	public string TipString;

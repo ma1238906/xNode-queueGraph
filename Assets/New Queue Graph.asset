@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Queue
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 390, y: -58}
+  position: {x: 392, y: -56}
   ports:
     keys:
     - startNode
@@ -28,7 +28,7 @@ MonoBehaviour:
         node: {fileID: -2041271575113801113}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: nextNode
@@ -40,10 +40,55 @@ MonoBehaviour:
         node: {fileID: -4974304200625254487}
         reroutePoints: []
       _direction: 1
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   mainGameobject: "\u996E\u6C34\u673A"
+  TipString: "\u6253\u5F00\u996E\u6C34\u673A\u63A5\u6C34\u3002"
+  operationType: 1
+  endAudio: {fileID: 0}
+  goal: 20
+  anim:
+  - animObj: "\u996E\u6C34\u673A"
+    animName: open
+--- !u!114 &-7542984836106888220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02e6bd6798d47241a3b3c5966a5647b, type: 3}
+  m_Name: Queue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: 248}
+  ports:
+    keys:
+    - startNode
+    - nextNode
+    values:
+    - _fieldName: startNode
+      _node: {fileID: -7542984836106888220}
+      _typeQualifiedName: MyNodeBase+EmptyPort, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -7542984836106888220}
+      _typeQualifiedName: MyNodeBase+EmptyPort, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  mainGameobject: "\u4E8C\u53F7\u996E\u6C34\u673A"
   TipString: "\u6253\u5F00\u996E\u6C34\u673A\u63A5\u6C34\u3002"
   operationType: 1
   endAudio: {fileID: 0}
@@ -79,7 +124,7 @@ MonoBehaviour:
         node: {fileID: -7553094504327373708}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: nextNode
@@ -88,7 +133,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 1
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   mainGameobject: "\u4EBA\u7269"
@@ -127,7 +172,7 @@ MonoBehaviour:
         node: {fileID: 5851154646025103328}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: nextNode
@@ -139,7 +184,7 @@ MonoBehaviour:
         node: {fileID: -7553094504327373708}
         reroutePoints: []
       _direction: 1
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   mainGameobject: "\u4EBA\u7269"
@@ -166,6 +211,7 @@ MonoBehaviour:
   - {fileID: 5851154646025103328}
   - {fileID: -7553094504327373708}
   - {fileID: -4974304200625254487}
+  - {fileID: -7542984836106888220}
   entryNode: {fileID: 8496431342824787956}
 --- !u!114 &5851154646025103328
 MonoBehaviour:
@@ -195,7 +241,7 @@ MonoBehaviour:
         node: {fileID: 8496431342824787956}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: nextNode
@@ -207,7 +253,7 @@ MonoBehaviour:
         node: {fileID: -2041271575113801113}
         reroutePoints: []
       _direction: 1
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   mainGameobject: "\u6C34\u676F"
@@ -247,7 +293,7 @@ MonoBehaviour:
         node: {fileID: 5851154646025103328}
         reroutePoints: []
       _direction: 1
-      _connectionType: 0
+      _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Name: "\u559D\u6C34\u64CD\u4F5C"
