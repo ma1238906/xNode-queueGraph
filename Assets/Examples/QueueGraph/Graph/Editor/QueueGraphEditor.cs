@@ -20,4 +20,5 @@ public class QueueGraphEditor : NodeGraphEditor
     {
         base.OnCreate();
     }
+
 }

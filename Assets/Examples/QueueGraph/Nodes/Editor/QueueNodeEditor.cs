@@ -1,12 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using XNodeEditor;
 using System.Diagnostics;
 
 [CustomNodeEditor(typeof(QueueNode))]
 public class QueueNodeEditor : NodeEditor
 {
+    private SceneObjects SO;
+    public override void OnCreate()
+    {
+        base.OnCreate();
+    }
+
     public override void OnHeaderGUI()
     {
         string title = "流程";
@@ -17,6 +24,15 @@ public class QueueNodeEditor : NodeEditor
     private string audioName;
     public override void OnBodyGUI()
     {
+        if(GameObject.Find("GameObject"))
+        {
+            SO = GameObject.Find("GameObject").GetComponent<SceneObjects>();
+        }
+        if (SO)
+        {
+            var temp = EditorGUILayout.ObjectField(SO.Get(target as QueueNode), typeof(GameObject)) as GameObject;
+            SO.Add(target as QueueNode, temp);
+        }
         base.OnBodyGUI();
         GUILayout.Space(8);
         GUILayout.BeginHorizontal();
@@ -41,4 +57,5 @@ public class QueueNodeEditor : NodeEditor
         process.StartInfo = pInfo;
         process.Start();
     }
+
 }

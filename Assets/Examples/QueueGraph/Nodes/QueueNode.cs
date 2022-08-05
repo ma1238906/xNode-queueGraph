@@ -28,7 +28,6 @@ public class QueueNode : MyNodeBase
 	protected override void Init()
 	{
 		base.Init();
-
 	}
 
 	public override object GetValue(NodePort port)
